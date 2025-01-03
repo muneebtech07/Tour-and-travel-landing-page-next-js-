@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display;
+  }
+
+  h2 {
+    @apply text-2xl md:text-3xl lg:text-4xl font-display;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl lg:text-3xl font-display;
+  }
+
+  body {
+    @apply font-sans text-base md:text-lg text-gray-800;
+  }
+
+  p {
+    @apply text-sm md:text-base lg:text-lg;
+  }
+}
+
+@layer components {
+  .animate-fade-up {
+    opacity: 0;
+    animation: fade-up 0.8s ease forwards;
+  }
+
+  .animate-fade-in {
+    opacity: 0;
+    animation: fade-in 0.8s ease forwards;
+  }
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Phone input custom styles */
+  .react-tel-input .form-control {
+    @apply w-full border-gray-300 focus:border-[#1B3C6B] focus:ring-1 focus:ring-[#1B3C6B] !important;
+  }
+
+  .react-tel-input .selected-flag {
+    @apply bg-transparent hover:bg-gray-50 !important;
+  }
+
+  .react-tel-input .country-list {
+    @apply bg-white shadow-lg border-gray-200 !important;
+  }
+
+  .react-tel-input .country-list .country:hover {
+    @apply bg-gray-50 !important;
+  }
+}
+
+.snow {
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10vh) translateX(0);
+  }
+  100% {
+    transform: translateY(110vh) translateX(20vw);
+  }
+}
+
+.hero-gradient {
+  background: linear-gradient(
+    to bottom,
+    rgba(27, 60, 107, 0.4) 0%,
+    rgba(27, 60, 107, 0.8) 100%
+  );
+}
+
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
