@@ -29,7 +29,7 @@ foreach ($required_fields as $field) {
 }
 
 // Email configuration
-$to = 'muneebf20@gmail.com'; // Replace with your email
+$to = 'example@gmail.com'; // Replace with your email
 $subject = 'New Tour Booking Request';
 
 // Prepare email content
@@ -111,7 +111,7 @@ if ($mail_sent) {
     $customer_headers = [
         'MIME-Version: 1.0',
         'Content-type: text/html; charset=utf-8',
-        'From: HimalayanMoutainSports <booking@himalayanmountainsports.com>',
+        'From: HimalayanMoutainSports <booking@example.com>',
         'X-Mailer: PHP/' . phpversion()
     ];
     
