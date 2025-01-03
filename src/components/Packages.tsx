@@ -3,12 +3,12 @@ import { MapPin, Calendar, Users, ArrowRight, Clock } from 'lucide-react';
 import BookingForm from './BookingForm';
 import ItineraryModal from './ItineraryModal';
 
-import dalLake from '../assets/images/kashmir tour packages (1).jpg';
-import srinagar from '../assets/images/kashmir tour packages (2).jpg';
-import pahalgam from '../assets/images/kashmir tour packages (3).jpg';
-import sonmarg from '../assets/images/kashmir tour packages (4).jpg';
-import gulmarg from '../assets/images/kashmir tour packages (5).jpg';
-import honeymoon from '../assets/images/kashmir tour packages (6).jpg';
+import dalLake from '../assets/images/kashmir tour packages (1).svg';
+import srinagar from '../assets/images/kashmir tour packages (2).svg';
+import pahalgam from '../assets/images/kashmir tour packages (3).svg';
+import sonmarg from '../assets/images/kashmir tour packages (4).svg';
+import gulmarg from '../assets/images/kashmir tour packages (5).svg';
+import honeymoon from '../assets/images/kashmir tour packages (6).svg';
 
 const packages = [
   {
